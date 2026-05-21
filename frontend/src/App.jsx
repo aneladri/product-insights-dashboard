@@ -19,19 +19,19 @@ function App() {
   const [dailyMetrics, setDailyMetrics] = useState([]);
 
   useEffect(() => {
-    fetch("https://your-render-url.onrender.com/metrics/summary")
+    fetch("https://product-insights-dashboard.onrender.com/metrics/summary")
       .then((res) => res.json())
       .then((data) => setSummary(data));
 
-    fetch("https://your-render-url.onrender.com/metrics/features")
+    fetch("https://product-insights-dashboard.onrender.com/metrics/features")
       .then((res) => res.json())
       .then((data) => setFeatures(data));
 
-    fetch("https://your-render-url.onrender.com/metrics/daily")
+    fetch("https://product-insights-dashboard.onrender.com/metrics/daily")
       .then((res) => res.json())
       .then((data) => setDailyMetrics(data));
 
-    fetch("https://your-render-url.onrender.com/insights")
+    fetch("https://product-insights-dashboard.onrender.com/insights")
       .then((res) => res.json())
       .then((data) => setInsights(data.insights));
   }, []);
@@ -114,7 +114,7 @@ function App() {
       </div>
 
       <div className="section">
-        <h2>🧠 Product Insights</h2>
+        <h2>🧠 Product Insights:</h2>
         <ul>
           {insights.map((insight, index) => (
             <li key={index}>{insight}</li>
