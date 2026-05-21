@@ -82,6 +82,14 @@ product-insights-dashboard/
 │
 └── README.md
 
+## 📸 Screenshots
+
+### Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+### Features
+![Features](./screenshots/features.png)
+
 ---
 
 ## 👨‍💻 Author
