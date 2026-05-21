@@ -19,19 +19,19 @@ function App() {
   const [dailyMetrics, setDailyMetrics] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/metrics/summary")
+    fetch("https://your-render-url.onrender.com/metrics/summary")
       .then((res) => res.json())
       .then((data) => setSummary(data));
 
-    fetch("http://127.0.0.1:8000/metrics/features")
+    fetch("https://your-render-url.onrender.com/metrics/features")
       .then((res) => res.json())
       .then((data) => setFeatures(data));
 
-    fetch("http://127.0.0.1:8000/metrics/daily")
+    fetch("https://your-render-url.onrender.com/metrics/daily")
       .then((res) => res.json())
       .then((data) => setDailyMetrics(data));
 
-    fetch("http://127.0.0.1:8000/insights")
+    fetch("https://your-render-url.onrender.com/insights")
       .then((res) => res.json())
       .then((data) => setInsights(data.insights));
   }, []);
