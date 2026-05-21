@@ -92,6 +92,16 @@ product-insights-dashboard/
 
 ---
 
+## 🌐 Live Demo
+
+Frontend:
+https://product-insights-dashboard-sand.vercel.app
+
+Backend API:
+https://product-insights-dashboard.onrender.com/metrics/summary
+
+---
+
 ## 👨‍💻 Author
 
 **Aneesh Neladri**
